@@ -5,7 +5,7 @@ body{
   padding: 0px;
   margin: 0px;
 }
-.heading{
+.heading{   <!--approved-->
   text-align: center;
   font-size: 50px;
   font-family: Georgia, serif;
@@ -14,7 +14,7 @@ body{
   align-items: center;
   
 }
-.navigating-links {
+.navigating-links {  <!--approved-->
   
   padding-left: 14px;
   padding-right: 14px;
@@ -26,7 +26,7 @@ body{
   
 }
 
-.navigating-links:hover {
+.navigating-links:hover {  <!--approved-->
  
   background-color: bisque;
   border-radius: 10px;
