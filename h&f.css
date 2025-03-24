@@ -5,7 +5,7 @@ body{
   padding: 0px;
   margin: 0px;
 }
-.heading{ <!--approved-->
+.heading{
   text-align: center;
   font-size: 50px;
   font-family: Georgia, serif;
@@ -14,7 +14,7 @@ body{
   align-items: center;
   
 }
-.navigating-links {  <!--approved-->
+.navigating-links {
   
   padding-left: 14px;
   padding-right: 14px;
@@ -26,7 +26,7 @@ body{
   
 }
 
-.navigating-links:hover {  <!--approved-->
+.navigating-links:hover {
  
   background-color: bisque;
   border-radius: 10px;
@@ -37,7 +37,7 @@ body{
   padding-bottom: 15px;
 }
 
-.top-right-header{  <!--approved-->
+.top-right-header{
   text-align: right;
   padding-right: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -47,7 +47,7 @@ body{
   padding-bottom: 0px;
 }
 
-.top-right-header-links {   <!--approved-->
+.top-right-header-links {
   color: #b15d1c;
   text-decoration-line: none;
   padding: 10px;
@@ -55,7 +55,7 @@ body{
   
 }
 
-.search-bar-body {    <!--approved-->
+.search-bar-body {
   font-family: arial;
   display: flex;
   justify-content: right;
@@ -67,7 +67,7 @@ body{
   
 }
 
-.search-container {     <!--approved-->
+.search-container {
   display: flex;
   align-items: right;
   background: white;
@@ -84,7 +84,7 @@ body{
   border-radius: 20px;
 }
 
-.search-button {       <!--approved-->
+.search-button {
   background: bisque;
   color: white;
   border: none;
@@ -97,7 +97,7 @@ body{
 
 
 
-.dropdown-menu {   <!--approved-->
+.dropdown-menu {
   text-align: center;
 }
 
