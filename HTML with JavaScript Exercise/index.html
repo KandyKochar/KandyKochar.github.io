@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML with JavaScript</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        html {
+            background: bisque;
+        }
+        p {
+            margin: 0.5em 0em;
+            padding: 0px;
+        }
+        img {
+            margin: auto;
+        }
+        span {
+            margin-top: 10px;
+        }
+        button {
+            background: white;
+            padding: 10px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        h1 {
+            padding: 0px;
+            margin: 0px;
+        }
+        header {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            margin-top: 0px;
+            padding: 2px 0px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            position: absolute;
+            margin: 0px;
+            padding: 2px 0px;
+            left: 0px;
+            bottom: 0px;
+            width: 100%;
+            text-align: center;
+        }
+        footer {
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Festival Information</h1>
+    </header>
+    <div id="image-container">
+        <img src="" alt="" width="50%" id="image">
+    </div>
+    <span>
+        <button id="button1" onclick="showChristmasInfo()">Christmas</button>
+        <button id="button2" onclick="showHalloweenInfo()">Halloween</button>
+        <button id="button3" onclick="showNewYearInfo()">New Year</button>
+    </span>
+    <span>
+        <button id="hide" onclick="hideImgContainerContents()">Hide</button>
+        <button id="hide" onclick="hideImgContainerContents()">Hide</button>
+        <button id="hide" onclick="hideImgContainerContents()">Hide</button>
+    </span>
+    <footer>
+        <h2>&#169; Matthew Walker</h2>
+    </footer>
+    <script>
+        function clearParagraphs() {
+            const imgContainer = document.getElementById('image-container');
+            const paragraphs = imgContainer.querySelectorAll('p');
+            paragraphs.forEach(p => p.remove());
+        }
+
+        function showChristmasInfo() {
+            clearParagraphs();
+
+            const img = document.getElementById("image");
+            img.setAttribute('src','./images/christmas.jpeg');
+
+            const imgContainer = document.getElementById('image-container');
+
+            const p1 = document.createElement('p');
+            p1.textContent = "Date: December 25";
+
+            const p2 = document.createElement('p');
+            p2.textContent = "Christmas is an annual festival celebrated around the world, commemorating the birth of Jesus Christ";
+
+            imgContainer.appendChild(p1);
+            imgContainer.appendChild(p2);
+        }
+
+        function showHalloweenInfo() {
+            clearParagraphs();
+
+            const img = document.getElementById("image");
+            img.setAttribute('src','./images/halloween.jpg');
+
+            const imgContainer = document.getElementById('image-container');
+
+            const p1 = document.createElement('p');
+            p1.textContent = "Date: October 31";
+
+            const p2 = document.createElement('p');
+            p2.textContent = "Halloween is a celebration observed in many countries on 31 October, the eve of the Western Christian feast of All Hallows' Day.";
+
+            imgContainer.appendChild(p1);
+            imgContainer.appendChild(p2);
+        }
+
+        function showNewYearInfo() {
+            clearParagraphs();
+
+            const img = document.getElementById("image");
+            img.setAttribute('src','./images/newyear.jpg');
+
+            const imgContainer = document.getElementById('image-container');
+
+            const p1 = document.createElement('p');
+            p1.textContent = "Date: January 1";
+
+            const p2 = document.createElement('p');
+            p2.textContent = "The New Year marks the beginning of a new calendar year";
+
+            imgContainer.appendChild(p1);
+            imgContainer.appendChild(p2);
+        }
+
+        function hideImgContainerContents() {
+            const img = document.getElementById("image");
+            img.setAttribute('src','');
+            clearParagraphs();
+        }
+    </script>
+</body>
+</html>

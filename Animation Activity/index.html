@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Activity</title>
+    <script src="script.js"></script>
+    <style>
+        #container {
+
+            width: 500px;
+            height: 500px;
+            background-color: yellow;
+            position: relative;
+            margin: 10px;
+        }
+
+        #animated {
+
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            color: white;
+            padding: 5px;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #animation {
+            width: 150px;
+            height: 150px;
+            background-color: lightsalmon;
+            position: relative;
+            left: 100px;
+            top: 200px;
+            margin: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="animated"></div>
+    </div>
+    <button type="button" onclick="myMove()">Click for Move</button>
+
+    <div id="animation"></div>
+</section>  
+</body>
+</html>
